@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "daily_challenge_2": {
+      "main": "src/daily_challenge_2/main.mo",
+      "type": "motoko"
+    },
+    "daily_challenge_2_assets": {
+      "dependencies": [
+        "daily_challenge_2"
+      ],
+      "frontend": {
+        "entrypoint": "src/daily_challenge_2_assets/src/index.html"
+      },
+      "source": [
+        "src/daily_challenge_2_assets/assets",
+        "dist/daily_challenge_2_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.8.4",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
